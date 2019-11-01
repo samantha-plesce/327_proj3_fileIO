@@ -48,11 +48,10 @@ int KP_FileIO::writeVectortoFile(const std::string filename,std::vector<std::str
 		return COULD_NOT_OPEN_FILE_TO_WRITE;
 	}
 
-	vector<string>::iterator myStringVectorIterator;
-	for(myStringVectorIterator = myEntryVector.begin();
-			myStringVectorIterator != myEntryVector.end();
-			myStringVectorIterator++){
-		file << *myStringVectorIterator + "\n";
+
+	for (int i = 0; i < myEntryVector.size(); i++)
+	{
+		file << myEntryVector[i] << endl;
 	}
 
 	return SUCCESS;
