@@ -43,7 +43,7 @@ int getFileContents(const std::string &filename, std::string &contents)
 	//COULD_NOT_OPEN_FILE_TO_WRITE
 int writeVectortoFile(const std::string filename,std::vector<std::string> &myEntryVector)
 {
-	int i = 0
+	int i = 0;
 	fstream file;
 	file.open(filename, ios::out);
 
